@@ -1,0 +1,21 @@
+a {
+    background-color: black;
+    
+    &:hover{
+        background-color: gray;
+    }
+    &:active{
+        background-color: aqua;
+    }
+
+}
+
+h1 {
+    border: 2px solid black;
+    background-color: aqua;
+    &:hover{
+        background-color:blue;
+        border: 6px solid black;
+        border-radius: 25px;
+    }
+}

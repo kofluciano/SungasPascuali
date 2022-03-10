@@ -1,1 +1,1 @@
-Segunda entrega de proyecto
+Entrega de desafio Sass1

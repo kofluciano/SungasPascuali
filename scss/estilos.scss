@@ -1,6 +1,57 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+/*Maps*/
+$redes:(wsp:green, face:#3a5795, insta: magenta);
+
+@each $clave, $valor in $redes {
+    .btn-#{$clave} {
+        background-color: $valor;
+    }    
+}
+
+/*Map-get*/
+$letrablanca:(
+    color:white,
+    centro:center,
+);
+.letrablancacenter{
+    color:map-get($letrablanca, color);
+    text-align: map-get($letrablanca, centro);
+}
+
+/*exten*/
+.colorletra1{
+    color: white;
+    background-color: #3a5795;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+.colorletra2{
+    @extend .colorletra1;
+    background-color: blueviolet;
+}
+/*Mixin*/
+@mixin size ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+.poseidonsub{
+    @extend .colorletra1;
+    @include size(500px,84px )
+}
+.calipsosub{
+    @extend .colorletra2;
+    @include size(500px,84px )
+}
+
+
 a {
-    background-color: black;
-    
     &:hover{
         background-color: gray;
     }
@@ -9,13 +60,12 @@ a {
     }
 
 }
-
-h1 {
-    border: 2px solid black;
-    background-color: aqua;
-    &:hover{
-        background-color:blue;
-        border: 6px solid black;
-        border-radius: 25px;
+.margen{
+    margin-left: 5px;
+    :hover{
+        background-color: #3a5795;
+    }
+    :active{
+        background-color: gray;
     }
 }

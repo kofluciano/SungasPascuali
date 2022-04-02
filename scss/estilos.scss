@@ -49,6 +49,14 @@ $letrablanca:(
     @extend .colorletra2;
     @include size(500px,84px )
 }
+.poseidonnav{
+    @extend .colorletra1;
+    @include size(150px,40px )
+}
+.calipsonav{
+    @extend .colorletra2;
+    @include size(150px,40px)
+}
 
 
 a {
@@ -68,4 +76,10 @@ a {
     :active{
         background-color: gray;
     }
+}
+
+.barranav{
+    display: flex;
+    position: sticky;
+    top: 5px;
 }

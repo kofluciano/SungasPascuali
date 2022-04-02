@@ -4560,7 +4560,9 @@ textarea.form-control-lg {
   color: #212529; }
 
 .carousel {
-  position: relative; }
+  position:relative;
+  margin-top: 100px;}
+
 
 .carousel.pointer-event {
   touch-action: pan-y; }
@@ -7825,13 +7827,13 @@ textarea.form-control-lg {
   text-align: center; }
 
 /*exten*/
-.colorletra1, .colorletra2, .calipsosub, .poseidonsub {
+.colorletra1, .colorletra2, .calipsosub, .calipsonav, .poseidonsub, .poseidonnav {
   color: white;
   background-color: #3a5795;
   border: 2px solid black;
   border-radius: 25px; }
 
-.colorletra2, .calipsosub {
+.colorletra2, .calipsosub, .calipsonav {
   background-color: blueviolet; }
 
 /*Mixin*/
@@ -7842,6 +7844,14 @@ textarea.form-control-lg {
 .calipsosub {
   width: 500px;
   height: 84px; }
+
+.poseidonnav {
+  width: 150px;
+  height: 40px; }
+
+.calipsonav {
+  width: 150px;
+  height: 40px; }
 
 a:hover {
   background-color: gray; }
@@ -7855,3 +7865,8 @@ a:active {
     background-color: #3a5795; }
   .margen :active {
     background-color: gray; }
+
+.barranav {
+  display: flex;
+  position: sticky;
+  top: 5px; }

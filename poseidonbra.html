@@ -10,26 +10,42 @@
 		<!--JS-->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
+	<!--NAV-->
 	<body class="bg-primary">
-		<!--Header-->
-		<header class="navbar navbar-light">
-			<div class="container-fluid" class="p-3 mb-2 bg-primary text-white">
-	  			<h1 class="p-3 mb-2  letrablancacenter fs-1">
-					<img src="imagenes/logos/logo.jpg" class="rounded-3 border border-dark" width="400px" height="400px"><br>
-					Poseidon sungas
-				  </h1>
+		<nav class="navbar navbar-expand-lg navbar-light bg-primary barranav">
+			<div class="container-fluid">
+				<img src="imagenes/logos/logo.jpg" class="rounded-3 border border-dark" width="100px" height="100px">
+				<br>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse fs-3" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle text-white fs-3" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Linea Poseidon
+					</a>
+					<ul class="dropdown-menu btn-face" aria-labelledby="navbarDropdownMenuLink">
+					  <li><a class="dropdown-item text-white" href="poseidonsli.html" >Sunga Slip</a></li>
+					  <li><a class="dropdown-item text-white" href="poseidonbra.html">Sunga Brasilera</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle text-white fs-3" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="p-3 mb-2   fs-1 calipsosub" >
+					  Linea Calipso
+					</a>
+					<ul class="dropdown-menu btn-insta" aria-labelledby="navbarDropdownMenuLink">
+					  <li><a class="dropdown-item text-white" href="calipsocompleta.html">Malla completa</a></li>
+					  <li><a class="dropdown-item text-white" href="calipsobikini.html">Bikini</a></li>
+					</ul>
+				  </li>
+				</ul>
+			  </div>
 			</div>
-		</header>
-<!--nav-->
-<nav> 
-	<a class="btn btn-info btn-light border-dark margen" href="index.html" role="button">Home</a>
-	<a class="btn btn-info btn-light border-dark margen" href="poseidon.html" role="button">Poseidon</a>
-	<a class="btn btn-info btn-light border-dark margen" href="poseidonbra.html">Sunga brasilera</a>
-	<a class="btn btn-info btn-light border-dark margen" href="poseidonsli.html">Sunga slip</a>
-	<a class="btn btn-info btn-light border-dark margen" href="calipso.html" role="button">Calipso</a>
-	<a class="btn btn-info btn-light border-dark margen" href="calipsocompleta.html">Malla completa</a>
-	<a class="btn btn-info btn-light border-dark margen" href="calipsobikini.html">Bikini</a>
-</nav>
+		  </nav>
 <!--Carrucel-->
 <br>
 <section>
@@ -42,13 +58,10 @@
 		<div class="carousel-inner">
 		  <div class="carousel-item active">
 			<img src="imagenes/Poseidon/brasilera/b1.jpeg" class="d-block w-100" alt="..."  height="800px">
-		  </div>
 		  <div class="carousel-item">
 			<img src="imagenes/Poseidon/brasilera/bra2.jpg" class="d-block w-100" alt="..."  height="800px">
-		  </div>
 		  <div class="carousel-item">
 			<img src="imagenes/Poseidon/brasilera/bra3.jpg" class="d-block w-100" alt="..."  height="800px">
-		  </div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -68,8 +81,7 @@
 				<img src="imagenes/logos/logofb.svg" alt="" width="50px" height="50px" class="d-inline-block align-text-top">
 			Seguinos en Facebook
 		  </a>
-		</div>
-<!--Use este metodo para separar estos divs porque la verdad es que no pude de otra maneras-->		
+		</div>		
 		<div class="text-primary">
 			a
 		</div>
@@ -89,6 +101,8 @@
 			</a>
 		  </div>
 	</div>
+	<br>
+	<br>
 </section>
 </body>
 </html>
